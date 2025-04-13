@@ -15,6 +15,11 @@ def generate_qr(input):
     print("QR code saved as 'qrcode.png'")
 
 if __name__ == "__main__":
+
     data = input("Enter the data:")
     print(f"Data: {data}")
+
+    if not data:
+        print("Empty data... Generating empty data QR")
+
     generate_qr(data)
